@@ -65,7 +65,7 @@ struct sockaddr {
 /* If your port already typedef's socklen_t, define SOCKLEN_T_DEFINED
    to prevent this code from redefining it. */
 #if !defined(socklen_t) && !defined(SOCKLEN_T_DEFINED)
-typedef u32_t socklen_t;
+//typedef u32_t socklen_t;
 #endif
 
 /* Socket protocol types (TCP/UDP/RAW) */
@@ -297,9 +297,9 @@ typedef struct ip_mreq {
   #define FD_ISSET(n,p) ((p)->fd_bits[(n)/8] &   (1 << ((n) & 7)))
   #define FD_ZERO(p)    memset((void*)(p),0,sizeof(*(p)))
 
-  typedef struct fd_set {
+  /*typedef struct fd_set {
           unsigned char fd_bits [(FD_SETSIZE+7)/8];
-        } fd_set;
+        } fd_set;*/
 
 #endif /* FD_SET */
 

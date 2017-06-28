@@ -111,7 +111,7 @@ typedef uintptr_t  mem_ptr_t;
 #define LWIP_RAND() ((u32_t)rand())
 
 #if defined(LWIP_UNIX_ANDROID) && defined(FD_SET)
-    typedef __kernel_fd_set fd_set;
+    //typedef __kernel_fd_set fd_set;
 #endif
 
 struct sio_status_s;

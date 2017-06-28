@@ -1,4 +1,17 @@
-org.quietmodem.Quiet
+androidPassqiQuiet
+===========
+org.quietmodem.Quiet with required changes for androidPassqi.
+
+Changes for androidPassqi
+---------------
+* Support for Android API 23+
+* Support for Android Studio 3.0
+* Support for new NDK build processes
+* Fixes problematic C code caused by changes in core NDK libraries (note: this breaks lwip but we aren't using it)
+* Custom passQi quiet profile, using BPSK and heavy FEC to optimize for accuracy without compromising speed
+* Optimized audio recording by using VOICE_RECOGNITION source preset in opensl.c to avoid inbuilt DSP effects
+
+Original README
 ===========
 
 [![Quiet Modem Chat](https://discordapp.com/api/guilds/290985648054206464/embed.png?style=shield)](https://discordapp.com/invite/eRw5UjF)

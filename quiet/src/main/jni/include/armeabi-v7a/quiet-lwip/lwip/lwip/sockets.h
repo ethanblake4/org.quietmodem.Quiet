@@ -65,7 +65,7 @@ struct sockaddr {
 /* If your port already typedef's socklen_t, define SOCKLEN_T_DEFINED
    to prevent this code from redefining it. */
 #if !defined(socklen_t) && !defined(SOCKLEN_T_DEFINED)
-typedef u32_t socklen_t;
+//typedef u32_t socklen_t;
 #endif
 
 /* Socket protocol types (TCP/UDP/RAW) */
